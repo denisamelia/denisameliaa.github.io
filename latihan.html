@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+
+background-image: url("bunga.jpg");
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #F0FFFF;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #BDB76B;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <style>
+</style>
+<body>
+<h2>Toko Bunga DenisAmelia</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Gambar</a></li>
+      <li><a href="#">Jenis</a></li>
+      <li><a href="#">Harga</a></li>
+
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Bunga Mawar</h1>
+    <p>Bunga mawar adalah jenis tanaman semak yang berasal dari Genus rosa sekaligus menjadi nama dari bunga yang dihasilkan oleh tumbuhan ini. Mawar umumnya merupakan tanaman semak yang berduri atau tanaman memanjat yang tingginya bisa mencapai 2 sampai 5 meter.</p>
+    <img src="mawar.jpg" alt="mawar" width="75" height="100">
+    <img src="mawar2.jpg" alt="mawar2" width="75" height="100">
+    <img src="mawar3.jpg" alt="mawar3" width="75" height="100">
+    <img src="mawar4.jpg" alt="mawar4" width="75" height="100">
+    <img src="mawar5.jpg" alt="mawar5" width="75" height="100">
+    <img src="mawar6.jpg" alt="mawar6" width="75" height="100">
+</section>
+
+<footer>
+  <p>Create By : DenisAmelia</p>
+</footer>
+
+</body>
+</html>
